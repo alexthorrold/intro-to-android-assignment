@@ -4,9 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 /**
  * Main activity which gives the user options to view different subjects
@@ -14,7 +12,7 @@ import android.widget.Toast;
  */
 public class MainActivity extends AppCompatActivity {
 
-    public static final String BUTTON_PRESSED = "button_pressed";
+    public static final String INDEX = "index";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onClickImageButton(View view) {
         Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra(BUTTON_PRESSED, (String) view.getTag());
+        intent.putExtra(INDEX, Integer.parseInt((String) view.getTag()));
         startActivity(intent);
     }
 }

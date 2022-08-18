@@ -14,6 +14,9 @@ import android.widget.TextView;
  */
 public class DetailActivity extends AppCompatActivity {
 
+    /**
+     * Sets the image view, title text view, and content text view to match selected subject
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

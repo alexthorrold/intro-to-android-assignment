@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".DetailActivity">
 
+    <!--  Selected subject banner on top of a solid  red block  -->
     <ImageView
         android:id="@+id/imageViewDetail"
         android:layout_width="match_parent"
@@ -19,8 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/dark_red" />
+        android:background="@color/red" />
 
+    <!--  Title and content text views for the selected subject  -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

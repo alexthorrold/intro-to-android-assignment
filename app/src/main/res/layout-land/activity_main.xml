@@ -6,38 +6,53 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".MainActivity">
-    
-    <androidx.constraintlayout.widget.ConstraintLayout
+
+    <!--  Banner image and text on top of a solid red block  -->
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="vertical"
-        android:background="@color/red" >
+        android:orientation="vertical" >
 
-        <ImageView
-            android:id="@+id/imageViewBannerImage"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="fitStart"
-            android:src="@drawable/img_banner_img"
-            android:tint="#70000000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@color/dark_red"
+            tools:ignore="NestedWeights">
 
-<!--        TODO fix image-->
-        <ImageView
-            android:id="@+id/imageViewBannerText"
+            <ImageView
+                android:id="@+id/imageViewBannerImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_banner_img"
+                android:tint="#70000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewBannerText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_banner_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitStart"
-            android:src="@drawable/img_banner_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/red" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
+    <!--  Four image buttons arranged in a 2x2 layout  -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"

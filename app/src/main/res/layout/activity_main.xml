@@ -12,7 +12,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:background="@color/red" >
+        android:background="@color/dark_red" >
 
         <ImageView
             android:id="@+id/imageViewBannerImage"

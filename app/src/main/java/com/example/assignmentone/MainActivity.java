@@ -14,19 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onClickComputerScience(View view) {
-        Toast.makeText(this, "message", Toast.LENGTH_SHORT).show();
-    }
-
-    public void onClickDesign(View view) {
-        Toast.makeText(this, "message", Toast.LENGTH_SHORT).show();
-    }
-
-    public void onClickMath(View view) {
-        Toast.makeText(this, "message", Toast.LENGTH_SHORT).show();
-    }
-
-    public void onClickSoftwareEngineering(View view) {
+    public void onClick(View view) {
         Toast.makeText(this, "message", Toast.LENGTH_SHORT).show();
     }
 }

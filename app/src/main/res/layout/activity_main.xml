@@ -45,11 +45,11 @@
         android:background="@color/black" >
 
         <ImageView
-            android:tag="@+id/imageViewComputerScience"
+            android:tag="imageViewComputerScience"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_tile_cs"
-            android:onClick="onClick"
+            android:onClick="onClickImageButton"
             app:layout_constraintHeight_default="percent"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -57,11 +57,11 @@
             app:layout_constraintWidth_percent="0.5" />
 
         <ImageView
-            android:tag="@+id/imageViewDesign"
+            android:tag="imageViewDesign"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_tile_design"
-            android:onClick="onClick"
+            android:onClick="onClickImageButton"
             app:layout_constraintHeight_default="percent"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintEnd_toEndOf="parent"
@@ -70,11 +70,11 @@
             app:layout_constraintWidth_percent="0.5" />
 
         <ImageView
-            android:tag="@+id/imageViewMath"
+            android:tag="imageViewMath"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_tile_math"
-            android:onClick="onClick"
+            android:onClick="onClickImageButton"
             app:layout_constraintHeight_default="percent"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -83,11 +83,11 @@
             app:layout_constraintWidth_percent="0.5" />
 
         <ImageView
-            android:tag="@+id/imageViewSoftwareEngineering"
+            android:tag="imageViewSoftwareEngineering"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_tile_se"
-            android:onClick="onClick"
+            android:onClick="onClickImageButton"
             app:layout_constraintHeight_default="percent"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintEnd_toEndOf="parent"

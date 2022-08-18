@@ -45,6 +45,7 @@
         android:background="@color/black" >
 
         <ImageView
+            android:id="@+id/imageViewComputerScience"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_tile_cs"
@@ -56,6 +57,7 @@
             app:layout_constraintWidth_percent="0.5" />
 
         <ImageView
+            android:id="@+id/imageViewDesign"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_tile_design"
@@ -68,6 +70,7 @@
             app:layout_constraintWidth_percent="0.5" />
 
         <ImageView
+            android:id="@+id/imageViewMath"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_tile_math"
@@ -80,6 +83,7 @@
             app:layout_constraintWidth_percent="0.5" />
 
         <ImageView
+            android:id="@+id/imageViewSoftwareEngineering"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_tile_se"
